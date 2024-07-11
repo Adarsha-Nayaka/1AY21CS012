@@ -21,5 +21,5 @@ urlpatterns = [
     path('api/product-details/<str:category>/<int:product_id>/', views.get_product_details, name='get_product_details_by_category'),
 
     # Endpoint for fetching filtered products
-    path('companies/<str:companyname>/categories/<str:categoryname>/products/', views.fetch_filtered_products, name='fetch_filtered_products'),
+    path('companies/<str:companyname>/categories/<str:categoryname>/products/', views.get_top_products, name='fetch_filtered_products'),
 ]
